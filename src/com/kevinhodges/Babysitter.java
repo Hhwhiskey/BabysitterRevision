@@ -4,6 +4,7 @@ public class Babysitter {
 
     int dayRate = 12;
     int bedRate = 8;
+    int lateRate = 16;
 
     public static void main(String[] args) {
 	// write your code here
@@ -15,5 +16,9 @@ public class Babysitter {
 
     public int getBedRate() {
         return bedRate;
+    }
+
+    public int getLateRate() {
+        return lateRate;
     }
 }
