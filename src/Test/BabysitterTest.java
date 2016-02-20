@@ -4,6 +4,7 @@ import com.kevinhodges.Babysitter;
 import org.junit.Before;
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 public class BabysitterTest {
 
@@ -41,6 +42,18 @@ public class BabysitterTest {
     @Test public void testMinimumShiftLength() {
         int result = babysitter.getMinimumShiftLength();
         assertEquals(1, result);
+    }
+
+    @Test public void testMaximumPayout() {
+
+        // Daily max payout should not exceed $148
+        // Which is 7 hours of day rate + 4 hours of late rate
+        // with no bed time
+        
+        int maxPayout = 148;
+
+        int result = babysitter.getMaxPayout();
+        assertTrue(result <= maxPayout);
     }
 }
 
