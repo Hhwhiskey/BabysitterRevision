@@ -31,6 +31,12 @@ public class BabysitterTest {
         int result = babysitter.getLateRate();
         assertEquals(16, result);
     }
+    
+    @Test
+    public void testMaxShiftLength() {
+        int result = babysitter.getMaxShiftLength();
+        assertEquals(11, result);
+    }
 }
 
 
