@@ -25,6 +25,12 @@ public class BabysitterTest {
         int result = babysitter.getBedRate();
         assertEquals(8, result);
     }
+
+    @Test
+    public void testLateRate() {
+        int result = babysitter.getLateRate();
+        assertEquals(16, result);
+    }
 }
 
 
