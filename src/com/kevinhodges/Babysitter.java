@@ -9,7 +9,6 @@ public class Babysitter {
     int minimumShiftLength = 1;
 
     public static void main(String[] args) {
-	// write your code here
     }
 
     public int getDayRate() {
@@ -30,5 +29,17 @@ public class Babysitter {
 
     public int getMinimumShiftLength() {
         return minimumShiftLength;
+    }
+
+    // Get max possible payout assuming a full shift with no bedtime(Meddling kids!)
+    public int getMaximumPayout() {
+        int maxDayHours = 7;
+        int maxLateHours = 4;
+
+        int maxDayPay = maxDayHours * dayRate;
+        int maxLatePay = maxLateHours * lateRate;
+
+        return maxDayPay + maxLatePay;
+
     }
 }
