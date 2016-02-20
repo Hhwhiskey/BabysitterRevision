@@ -6,6 +6,7 @@ public class Babysitter {
     int bedRate = 8;
     int lateRate = 16;
     int maxShiftLength = 11;
+    int minimumShiftLength = 1;
 
     public static void main(String[] args) {
 	// write your code here
@@ -25,5 +26,9 @@ public class Babysitter {
 
     public int getMaxShiftLength() {
         return maxShiftLength;
+    }
+
+    public int getMinimumShiftLength() {
+        return minimumShiftLength;
     }
 }
