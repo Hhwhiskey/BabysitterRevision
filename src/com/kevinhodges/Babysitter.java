@@ -42,4 +42,12 @@ public class Babysitter {
         return maxDayPay + maxLatePay;
 
     }
+
+    // Get minimum possible payout assuming 1 hour during bedtime
+    // Payout should never be below this value
+    public int getMinimumPayout() {
+        int minBedHours = 1;
+
+        return minBedHours * bedRate;
+    }
 }
